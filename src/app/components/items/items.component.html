@@ -1,0 +1,11 @@
+<div class='search'>
+  <span><input [(ngModel)]='term' placeholder="Search for an item...."></span>
+  <button (click)="filterItems()">Search</button>
+</div>
+<div *ngIf="search" class='item-component' style='overflow-y:scroll; height:500px;'>
+  <ul *ngFor="let item of filteredItems">
+    <div class='item-container'>
+      <app-single-item [filteredItems]="item"></app-single-item>
+   </div>
+  </ul>
+</div> 

@@ -1,0 +1,45 @@
+.item-component {
+    overflow-y: scroll;
+    max-height: 480px;
+    box-shadow: 9px 11px 28px grey;
+    border: 2px solid;
+    border-radius: 5px;
+  }
+
+.item-component{
+scrollbar-highlight-color: rgb(5, 0, 0);
+scrollbar-3dlight-color: rgb(5, 0, 0);
+scrollbar-darkshadow-color: rgb(2, 0, 0);
+scrollbar-track-color: rgb(7, 0, 0);
+scrollbar-arrow-color: rgb(7, 0, 0);
+}
+
+/* Let's get this party started */
+.item-component::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+.item-component::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    
+}
+ 
+/* Handle */
+.item-component::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: black 
+}
+
+.item-container {
+    list-style-type: none;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}

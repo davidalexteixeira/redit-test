@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    max-width: 400px;
+    max-height: 500px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #da2a1d;
+    border: 2px solid black;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #da2a1d;
+}

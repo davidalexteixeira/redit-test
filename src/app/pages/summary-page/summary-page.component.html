@@ -1,0 +1,17 @@
+<div>
+  <div *ngFor="let item of itemArray; index as i">
+    <p>
+        {{item[i].specificationSubtype}} purchased Successfully!
+      </p>
+      <p>
+        Order Details
+      </p>
+    <ul>
+      <li>
+        {{item[i].description}}
+        <p>Total Price: {{item[i].ProductOfferPrice[1].price.amount}} </p>
+      </li>
+    </ul>
+    <button (click)="emptyArray()"> Purchase some more?</button>
+  </div>
+</div>

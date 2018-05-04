@@ -1,0 +1,26 @@
+a {
+    color: #da2a1d;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transform: scale(1.2);
+}
+
+a:active {
+    text-decoration: none;
+}
+
+i:hover {
+    transform: scale(1.2);
+}

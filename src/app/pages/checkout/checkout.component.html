@@ -1,0 +1,15 @@
+<div *ngFor="let item of itemArray; index as i">
+  <ul>
+    <li id="checkout-items">
+      {{item[i].description}}
+    </li>
+    {{item[i].specificationSubtype}}
+    <div>
+      <p>Total Price: {{item[i].ProductOfferPrice[1].price.amount}} </p>
+    </div>
+  </ul>
+  <button (click)="goToSummary()">CheckOut</button>
+  <a [routerLink]="['/']">Back to Search</a>
+</div>
+
+
